@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>Storage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="DataManager.js"></script>
+
+  <title>Reportes</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  </script>
+   <script src="reporte.js" ></script>
+
+</head>
+<body>
+<button id="btnDelete" onclick="deleteData();">Borrar todo</button>
+<br>
+<br>
+<form>
+  <label for="id">ID:</label>
+  <input type="number" id="id">
+  <br>
+  <br>
+  <label for="nombreProducto">Nombre del producto:</label>
+  <input type="text" id="nombreProducto">
+  <br>
+  <br>
+  <label for="description">Descripción:</label>
+  <input type="text" id="description">
+  <br>
+  <br>
+  <label for="price">Precio:</label>
+  <input type="number" id="price">
+  <br>
+  <br>
+  <label for="brand">Marca:</label>
+  <input type="text" id="brand">
+  <br>
+  <br>
+  <label for="Categotria">Categotria del producto:</label>
+            <select id="category">
+                <option value="Limpieza" selected>Limpieza</option>
+                <option value="Cocina" >Cocina</option>
+                <option value="Lacteos" >Lacteos</option>
+                <option value="Granos y semillas" >Granos y semillas</option>
+                <option value="Dulces" >Dulces</option>
+                <option value="Bebidas" >Bebidas</option>
+                <option value="Botana" >Botana</option>
+            </select>
+  <br>
+  <br>
+  <button id="btnSave" onclick="saveData();">Guardar</button>
+  <br><br>
+  <button id="btnSearch" onclick="searchData();">Buscar</button>
+</form>
+
+</form>
+<br>
+<button id="btnList" onclick="listData();">Listar productos</button>
+<br>
+<p id="noResults"></p>
+<div>
+  <table id="products" border="1">
+
+  </table>
+   <body>
+      <br>
+      <input type="url" id="url" placeholder="Coloque la url de la imagen"  
+      value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYl8m1HoUapl50V9tKOvh4bKLNLlPdVJQHA&usqp=CAU">
+      <input type="button" value="Generar reporte" onclick="generateReport()">
+  </body>
+
+  <!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas con chart.js | By Parzibyte</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <h1>Ejemplo 1 - Gráfica de líneas</h1>
+    <div style="height: 40vh; width: 50vw;">
+      <canvas id="grafica"></canvas>
+    </div>
+    <script src="Grafica.js"></script>
+</body>
+
+</html>
+
+</div>
